@@ -1,10 +1,13 @@
 import express, {Request, Response} from "express"
 import path from "path"
+import * as dotenv from 'dotenv'
+dotenv.config()
 import callSephoraAPI from "./controllers/SephoraAPI"
 
 const app = express()
 const PORT = 3000
 
+//
 callSephoraAPI()
 
 app.use(express.json())

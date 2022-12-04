@@ -5,7 +5,7 @@ const callSephoraAPI = async () => {
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '0f0153072bmshce3e5c614f8eb2dp199cfcjsn758f7c55be56',
+        'X-RapidAPI-Key': process.env.X_RAPIDAPI_KEY as string,
         'X-RapidAPI-Host': 'sephora.p.rapidapi.com'
       }
     };
